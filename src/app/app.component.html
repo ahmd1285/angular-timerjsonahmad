@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>
+<button (click) = saveJsonData()>GetJSON</button>
+</p>
+
+<app-consumer></app-consumer>
+
+<button (click)="beginTimer()">Get User Timer</button>
+Timer :{{time}}
+<ul *ngFor="let item of dataList">
+  <li>{{"Id: " + item.id + ";  Name: " + item.name + ";  Username: " + item.username}}</li>
+</ul>
